@@ -39,5 +39,6 @@
 
 	<select id="findAll" resultType="Book">
         select * from book
+		
     </select>
 </mapper>
