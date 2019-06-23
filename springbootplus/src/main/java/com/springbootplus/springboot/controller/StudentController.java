@@ -207,7 +207,7 @@ public class StudentController {
             return "register";
 
         }
-        if (registerInfoYanZheng.puanduan()) {
+        if (!registerInfoYanZheng.puanduan()) {
             map.put("username", registerInfoYanZheng.getErrors().get("username"));
             System.out.println(registerInfoYanZheng.getErrors().get("username"));
             map.put("password", registerInfoYanZheng.getErrors().get("password"));
